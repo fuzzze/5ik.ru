@@ -19,7 +19,7 @@
 <body>
 	
 <script>
-$.getJSON( "http://api.duma.gov.ru/api/1d22733a308727933719bc99c1208dfc80c938be/deputies.xml?begin=%D0%90", function( data ) {
+$.getJSON( "http://api.duma.gov.ru/api/1d22733a308727933719bc99c1208dfc80c938be/deputies.json?begin=%D0%90", function( data ) {
   var items = [];
   $.each( data, function( key, val ) {
     items.push( "<li id='" + key + "'>" + val + "</li>" );
