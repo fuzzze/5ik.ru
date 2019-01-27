@@ -8,7 +8,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-0.0.2	
+0.0.3	
 <script>
     $(function () {
         $.ajax({
@@ -17,10 +17,10 @@
             "dataType": "json"
         })
         .done(function (data) {
- 		console.log(result);
+ 		console.log(data);
         })
         .fail(function(jqXHR, status, error) {
- 
+ 	console.log("E1");
         })
     });
 </script>	
